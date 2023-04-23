@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0; /* add this to remove default margin on body element */
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+:root {
+  --grey-color: #313131;
+  --dark-green: #2a7a3b;
+  --main-green: #34a248;
+}
+
+.game-container {
+  width: 100%;
+}
+
+.top-bar {
+  background-color: var(--grey-color);
+  height: 15vh;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.top-bar,
+p {
+  font-size: 1.3rem;
+}
+
+.fa-solid.fa-volume-off,
+.fa-solid.fa-rotate-right {
+  font-size: 2rem;
+}
+
+.deck-game-cardsuits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.deck {
+  background-color: var(--dark-green);
+  width: 10rem;
+  position: relative;
+  display: flex;
+  justify-content: center; /* centers items along the main axis */
+}
+
+.card-deck-placeholder {
+  margin-top: 1.5rem;
+  height: 110px;
+  width: 70px;
+  border: 4px solid rgba(45, 45, 45, 0.4);
+  border-radius: 5px;
+  background: transparent;
+}
+
+.game {
+  background-color: var(--main-green);
+  width: calc(100% - 20rem); /* subtract the width of .deck and .card-suits */
+  height: 100vh;
+  order: 2;
+  position: relative;
+}
+
+.fa-solid.fa-arrow-left-long {
+  font-size: 3rem;
+  position: absolute;
+  bottom: 10rem;
+  left: 5rem;
+}
+
+.card-suits {
+  background-color: var(--dark-green);
+  width: 10rem;
+  order: 3;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; /* centers items along the main axis */
+  height: 100vh;
+}
+
+.card-suits-placeholder1,
+.card-suits-placeholder2,
+.card-suits-placeholder3,
+.card-suits-placeholder4 {
+  height: 110px;
+  width: 70px;
+  border: 4px solid rgba(45, 45, 45, 0.4);
+  border-radius: 5px;
+  background: transparent;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
