@@ -10,26 +10,26 @@
   <body>
     <div class="game-container">
       <div class="top-bar">
-        <i class="fa-solid fa-rotate-right" style="color: #FFFFFF;"></i>
-        <p>timer</p>
-        <p>score</p>
-        <p>moves</p>
-        <i class="fa-solid fa-volume-off" style="color: #ffffff;"></i>
+        <i id="resetButton" class="fa-solid fa-rotate-right" style="color: #FFFFFF;"></i>
+        <p id="timer">timer</p>
+        <p id="score">score</p>
+        <p id="moves">moves</p>
+        <i id="sound" class="fa-solid fa-volume-off" style="color: #ffffff;"></i>
       </div>
       <div class="deck-game-cardsuits">
         <div class="deck">
-          <div class="card-deck-placeholder"></div>
+          <div id="deckPlaceholder" class="card-deck-placeholder"></div>
         </div>
         <div class="game">
           <div class="undo">
-            <i class="fa-solid fa-arrow-left-long" style="color: #4d4d4d;"></i></div>
+            <i id="undoButton" class="fa-solid fa-arrow-left-long" style="color: #4d4d4d;"></i></div>
         
           </div>
         <div class="card-suits">
-          <div class="card-suits-placeholder1"></div>
-          <div class="card-suits-placeholder2"></div>
-          <div class="card-suits-placeholder3"></div>
-          <div class="card-suits-placeholder4"></div>
+          <div id="heartsPlaceholder" class="card-suits-placeholder1"></div>
+          <div id="diamondsPlaceholder" class="card-suits-placeholder2"></div>
+          <div id="clubsPlaceholder" class="card-suits-placeholder3"></div>
+          <div id="spadesPlaceholder" class="card-suits-placeholder4"></div>
         </div>
       </div>
       </div>
